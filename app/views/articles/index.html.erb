@@ -1,0 +1,14 @@
+<div class="container">
+
+<% @articles.each do |article| %>
+  <div class="panel panel-default">
+    <div class="panel-heading"><%= article.name %></div>
+    <div class="panel-body">
+      <%= article.detail %>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item">โดย<%= article.email %></li>
+    </ul>
+  </div>  
+<% end %>
+</div>
